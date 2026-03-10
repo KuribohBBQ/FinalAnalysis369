@@ -17,21 +17,21 @@ To filter out strange reviews from genuine reviews from the dataset as accuratel
 
 For example, from my analysis, this is what the top reviewed game, Counter-Strike-2, looks like with the unfiltered dataset
 
---Game Title: Counter-Strike 2
-    --Positive Reviews: 6771546
-    --Negative Reviews: 933107
-    --Total Reviews: 7704653
-    --Review Label: Very Positive
-    --Review Score: 0.878890457493673
+- Game Title: Counter-Strike 2
+    - Positive Reviews: 6771546
+    - Negative Reviews: 933107
+    - Total Reviews: 7704653
+    - Review Label: Very Positive
+    - Review Score: 0.878890457493673
 
 And this is what it looks like after filtering out the strange reviews 
 
---Game Title: Counter-Strike 2
-    --Positive Reviews: 6695808
-    --Negative Reviews: 929415
-    --Total Reviews: 7625223
-    --Review Label: Very Positive
-    --Review Score: 0.8781130728898027
+- Game Title: Counter-Strike 2
+    - Positive Reviews: 6695808
+    - Negative Reviews: 929415
+    - Total Reviews: 7625223
+    - Review Label: Very Positive
+    - Review Score: 0.8781130728898027
 
 Looking at the difference between Total Reviews, the difference between them is nearly 80 thousand strange reviews removed. After running my code, I've removed over 930 thousand strange reviews from the dataset across different games.
 
@@ -62,4 +62,5 @@ To detect drastic changes to a game's review label, I joined two tables. The fir
 The most reviewed game that had its label changed after filtering was CRSED, with only 38 thousand reviews. And while 38 thousand is a large number, it is small compared to the top 50 games that have over 100 thousand, with the top game having over 7.6 million.
 
 ## Conclusion
+
 Filtering out the strange reviews had less impact than I thought on Steam's top reviewed games. It barely made a dent in changing their labels. While the biggest games remain unfazed, smaller games like CRSED and Total War: WARHAMMER - Blood for the Blood God are more supsceiptible to users and bots leaving strange reviews.
